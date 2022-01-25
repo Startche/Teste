@@ -8,6 +8,7 @@ void setup() {
   Serial.println("Laurópatra");
   Serial.println("Caio Vinicius");
   Serial.println("Luma Gomes");
+  serial.prinln("Pedro Arthur");
 }
 
 void loop() {
