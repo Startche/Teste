@@ -6,6 +6,7 @@ void setup() {
   Serial.println("Nomes abaixo");
   Serial.println("Gabriel F.");
   Serial.println("Laurópatra");
+  Serial.println("Caio Vinicius");
 }
 
 void loop() {
