@@ -5,6 +5,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Nomes abaixo");
   Serial.println("Lucas Klement Reinehr (klement01)");
+  Serial.println("Gustavo Batista Titow (gustavotitow)");
 
 }
 
