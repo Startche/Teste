@@ -1,12 +1,12 @@
 //#include <TB6612_ESP32.h>
 
 // Obs: não entendi como diabos adicionar um header aqui no arduino, deixei a implementação da classe sumo solta aqui por enquanto
-/*  Header Sumo */
-class Sumo
+/*  Header LineSensor */
+class LineSensor
 {
     public:
-        Sumo(char pin);
-        ~Sumo();
+        LineSensor(char pin);
+        ~LineSensor();
         int read();
     private:
         char pin;
@@ -24,7 +24,7 @@ const int LINHAE = 0, LINHAD = 0;
 const double c_LineSensorLimit = 0.9;
 const double c_LineSensorResolution = 4095;
 
-Sumo sensorEsquerdo(15);
+LineSensor sensorEsquerdo(15);
 
 //inicializacao dos motores
 //Motor motor1 = Motor(AIN1, AIN2, PWMA, offsetA, STBY);
@@ -56,18 +56,18 @@ void loop (){
 }*/
 
 
-/*  Implementation Sumo */
-Sumo::Sumo(char pin)
+/*  Implementation LineSensor */
+LineSensor::LineSensor(char pin)
 {
     this->c_LineSensorLimit = 0.9;
     this->c_LineSensorResolution = 4095.0;
     this->pin = pin;
 }
-Sumo::~Sumo()
+LineSensor::~LineSensor()
 {
 
 }
-int Sumo::read()
+int LineSensor::read()
 {
     double leitura = analogRead(this->pin);
 
